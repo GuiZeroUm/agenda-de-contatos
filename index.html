@@ -18,21 +18,27 @@
         <main class="agenda">
             <div class="cadastro">
                 <form id="form-contatos">
-                    <input type="text" required id="form-nome" placeholder="Nome">
-                    <input type="tel" required id="form-numero" placeholder="Número">
+                    <input type="text" autocomplete="off" required id="form-nome" placeholder="Nome">
+                    <input type="tel" autocomplete="off" required id="form-numero" placeholder="Número">
                     <button>Cadastrar</button>
                 </form>
                 
             </div>
             <div class="contatos">
-                <table>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Contato</th>
-                    </tr>
+                <table cellspacing="0">
+                    <thead>
+                        <th><h1 class="gradient">Contatos</h1></th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </main>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html

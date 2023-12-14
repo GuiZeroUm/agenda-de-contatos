@@ -17,11 +17,15 @@ header {
     justify-content: center;
 }
 
-header h1 {
-    font-size: 48px;
+.gradient {
     background: linear-gradient(to right, #30CFD0 0%, #330867 120%);
     background-clip: text;
-    color: transparent;
+    color: transparent; 
+}
+
+header h1 {
+    font-size: 48px;
+   
 }
 
 main {
@@ -37,7 +41,7 @@ main {
     height: 570px;
     width: 350px;
     border-radius: 32px;
-    background-color: #30CFD0;
+    background-color: #2F2F2F;
 }
 
 .cadastro form {
@@ -50,13 +54,16 @@ main {
 }
 
 .cadastro form input {
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #30CFD0;
+    padding: 1rem;
     margin-bottom: 36px;
 }
 
-
 .cadastro form button {
     position: relative;
-    background-color: green;
+    background-color: #30CFD0;
     width: 168px;
     height: 54px;
     left: 60px;
@@ -66,14 +73,45 @@ main {
     font-size: 32px;
     cursor: pointer;
     border: none;
+    transition: ease 0.2s;
 }
 .cadastro form button:hover {
-    background-color: black;
+    background-color: #330867;
 }
 
 .contatos {
     height: 570px;
     width: 350px;
     border-radius: 32px;
-    background-color: #330867;
+    background-color: #2F2F2F;
+}
+
+.contatos table {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 300px;
+    top: 200px;
+    left: 25px;
+}
+
+.contatos table tr th {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 300px;
+    bottom: 100px;
+    left: 90px;
+}
+
+.contatos table tbody tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.contatos table tbody tr td {
+    padding: 4px;
 }
